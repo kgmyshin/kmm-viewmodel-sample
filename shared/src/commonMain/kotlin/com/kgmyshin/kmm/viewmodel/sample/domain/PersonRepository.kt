@@ -6,6 +6,8 @@ class PersonRepository {
 
     private val data = MASTER.toMutableList()
 
+    suspend fun findById(id: PersonId): Person? = data.find { it.id == id }
+
     suspend fun findAll(): List<Person> = MASTER
 
     suspend fun deleteById(id: PersonId) {
