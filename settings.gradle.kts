@@ -9,3 +9,4 @@ pluginManagement {
 rootProject.name = "kmm-viewmodel-sample"
 include(":androidApp")
 include(":shared")
+include(":viewmodel-ktx")
