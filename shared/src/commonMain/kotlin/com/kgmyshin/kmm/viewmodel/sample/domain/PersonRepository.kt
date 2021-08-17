@@ -1,13 +1,17 @@
 package com.kgmyshin.kmm.viewmodel.sample.domain
 
-import com.benasher44.uuid.Uuid
 import com.benasher44.uuid.uuid4
 
-class AnimalRepository {
-    suspend fun findAll(): List<Person> = MASTER
-}
+class PersonRepository {
 
-private val uuid4: Uuid = uuid4()
+    private val data = MASTER.toMutableList()
+
+    suspend fun findAll(): List<Person> = MASTER
+
+    suspend fun deleteById(id: PersonId) {
+        data.removeAll { it.id == id }
+    }
+}
 
 private val MASTER: List<Person> = listOf(
     "Adrian",
@@ -210,7 +214,7 @@ private val MASTER: List<Person> = listOf(
     "Victoria"
 ).map { name ->
     Person(
-        PersonId(uuid4.toString()),
+        PersonId(uuid4().toString()),
         name
     )
 }

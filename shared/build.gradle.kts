@@ -30,6 +30,8 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("com.benasher44:uuid:0.3.0")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1-native-mt")
+                implementation("io.insert-koin:koin-core:3.1.2")
             }
         }
         val commonTest by getting {
@@ -51,10 +53,10 @@ kotlin {
 }
 
 android {
-    compileSdkVersion(30)
+    compileSdk = 30
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
-        minSdkVersion(26)
-        targetSdkVersion(30)
+        minSdk = 26
+        targetSdk = 30
     }
 }
