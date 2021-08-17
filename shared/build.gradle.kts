@@ -25,10 +25,12 @@ kotlin {
         frameworkName = "shared"
         podfile = project.file("../iosApp/Podfile")
     }
-    
+
     sourceSets {
         val commonMain by getting {
-            
+            dependencies {
+                implementation("com.benasher44:uuid:0.3.0")
+            }
         }
         val commonTest by getting {
             dependencies {
