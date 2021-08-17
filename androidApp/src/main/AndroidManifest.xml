@@ -3,11 +3,12 @@
     package="com.kgmyshin.kmm.viewmodel.sample.android">
 
     <application
+        android:name=".MyApp"
         android:allowBackup="false"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.personlist.PersonListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
