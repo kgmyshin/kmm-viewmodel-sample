@@ -18,7 +18,7 @@ struct PersonListPage: View {
                 self.viewModel.onClickDelete(id: id)
             }
         ).onAppear(perform: {
-            viewModel.onLaunched()
+            viewModel.onLaunch()
         })
         .onDisappear(perform: {
             viewModel.onDispose()

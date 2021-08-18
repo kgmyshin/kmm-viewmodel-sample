@@ -20,8 +20,8 @@ class PersonListViewModel(
     val personListStateFlow: StateFlow<List<PersonUiModel>>
         get() = _personListStateFlow
 
-    override fun onLaunched() {
-        super.onLaunched()
+    override fun onLaunch() {
+        super.onLaunch()
         coroutineScope.launch {
             _personListStateFlow.value =
                 getPersonListUseCase.execute().map { PersonConverter.convert(it) }
