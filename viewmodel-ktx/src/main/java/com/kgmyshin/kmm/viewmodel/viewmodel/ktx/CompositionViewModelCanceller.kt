@@ -7,7 +7,7 @@ class CompositionViewModelCanceller<T : ViewModel>(
     val viewModel: T
 ) : RememberObserver {
     override fun onRemembered() {
-        viewModel.onLaunched()
+        viewModel.onLaunch()
     }
 
     override fun onAbandoned() {

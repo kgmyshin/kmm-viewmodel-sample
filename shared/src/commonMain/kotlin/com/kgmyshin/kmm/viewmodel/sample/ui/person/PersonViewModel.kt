@@ -17,8 +17,8 @@ class PersonViewModel(
     val personStateFlow: StateFlow<PersonUiModel?>
         get() = _personStateFlow
 
-    override fun onLaunched() {
-        super.onLaunched()
+    override fun onLaunch() {
+        super.onLaunch()
         coroutineScope.launch {
             _personStateFlow.value =
                 getPersonUseCase.execute(id)?.let { PersonConverter.convert(it) }

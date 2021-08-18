@@ -4,7 +4,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.cancel
 
 abstract class ViewModel(protected val coroutineScope: CoroutineScope) {
-    open fun onLaunched() {}
+    open fun onLaunch() {}
 
     open fun onDispose() {
         coroutineScope.cancel()
