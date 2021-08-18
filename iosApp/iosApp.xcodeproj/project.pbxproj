@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		2FF703F884C07876BE9C1582 /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 207220FC2FEFBA8435565953 /* Pods_iosApp.framework */; };
-		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		7555FF83242A565900829871 /* PersonListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* PersonListPage.swift */; };
+		B350F77826CCD68C0003CE06 /* ViewModel+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350F77726CCD68C0003CE06 /* ViewModel+SwiftUI.swift */; };
+		B350F77D26CCD8830003CE06 /* PersonListTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350F77C26CCD8830003CE06 /* PersonListTemplate.swift */; };
+		B3DFAC8426CCF43800621893 /* Koin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DFAC8326CCF43800621893 /* Koin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,8 +21,11 @@
 		207220FC2FEFBA8435565953 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7555FF82242A565900829871 /* PersonListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListPage.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B350F77726CCD68C0003CE06 /* ViewModel+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+SwiftUI.swift"; sourceTree = "<group>"; };
+		B350F77C26CCD8830003CE06 /* PersonListTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListTemplate.swift; sourceTree = "<group>"; };
+		B3DFAC8326CCF43800621893 /* Koin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Koin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,6 @@
 				15DE54AA1615F9061DB4DF5A /* Pods-iosApp.debug.xcconfig */,
 				1FA2C458F80CF376B77966A0 /* Pods-iosApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,9 +78,12 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
-				7555FF82242A565900829871 /* ContentView.swift */,
+				7555FF82242A565900829871 /* PersonListPage.swift */,
+				B350F77C26CCD8830003CE06 /* PersonListTemplate.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
+				B350F77726CCD68C0003CE06 /* ViewModel+SwiftUI.swift */,
+				B3DFAC8326CCF43800621893 /* Koin.swift */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -175,7 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
-				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				B3DFAC8426CCF43800621893 /* Koin.swift in Sources */,
+				B350F77826CCD68C0003CE06 /* ViewModel+SwiftUI.swift in Sources */,
+				B350F77D26CCD8830003CE06 /* PersonListTemplate.swift in Sources */,
+				7555FF83242A565900829871 /* PersonListPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
