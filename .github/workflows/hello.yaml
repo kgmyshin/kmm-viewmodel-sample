@@ -1,0 +1,13 @@
+name: hello
+
+on:
+  issue_comment:
+    types: created
+
+jobs:
+  build:
+    if: (github.event.issue.pull_request != null) && github.event.comment.body == '!github deploy-feature'
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello
+        run: echo "hello kgmys"
